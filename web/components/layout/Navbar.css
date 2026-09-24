@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-6);
-  min-height: 76px;
+  min-height: 56px;
 }
 
 .brand {
@@ -27,7 +27,7 @@
 }
 
 .brand img {
-  width: clamp(120px, 26vw, 150px);
+  width: clamp(80px, 17vw, 104px);
   height: auto;
 }
 
@@ -51,7 +51,7 @@
 .desktop-nav__link {
   display: inline-flex;
   align-items: center;
-  padding: 0.55rem 0.85rem;
+  padding: 0.45rem 0.7rem;
   border-radius: var(--radius-pill);
   font-weight: var(--weight-medium);
   font-size: var(--text-sm);
@@ -167,7 +167,7 @@
 /* ---------- Mobile menu ---------- */
 .mobile-menu {
   position: fixed;
-  inset: 76px 0 0 0;
+  inset: 56px 0 0 0;
   z-index: var(--z-overlay);
   display: flex;
   flex-direction: column;

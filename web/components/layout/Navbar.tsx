@@ -86,8 +86,8 @@ export default function Navbar() {
           <Image
             src="/images/website_logo.svg"
             alt={`${site.name} logo`}
-            width={150}
-            height={45}
+            width={104}
+            height={31}
             priority
           />
         </Link>
