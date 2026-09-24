@@ -26,6 +26,11 @@
   line-height: 0;
 }
 
+.brand img {
+  width: clamp(120px, 26vw, 150px);
+  height: auto;
+}
+
 .desktop-nav {
   display: none;
 }
@@ -169,6 +174,7 @@
   background: var(--color-bg);
   padding: var(--space-6) var(--container-pad) calc(var(--space-6) + env(safe-area-inset-bottom));
   overflow-y: auto;
+  overscroll-behavior: contain;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-8px);
@@ -229,7 +235,7 @@
 
 .mobile-menu__sub-link {
   display: block;
-  padding: 0.6rem 0;
+  padding: 0.85rem 0;
   color: var(--color-ink-soft);
   font-size: var(--text-lg);
   text-decoration: none;
