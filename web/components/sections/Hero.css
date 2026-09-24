@@ -40,11 +40,11 @@
 }
 
 .eyebrow--on-dark {
-  color: #9fd0c4;
+  color: var(--color-brand-on-dark);
 }
 
 .eyebrow--on-dark::before {
-  background: #9fd0c4;
+  background: var(--color-brand-on-dark);
 }
 
 .hero__content {
@@ -163,12 +163,12 @@
   font-size: var(--text-xs);
   font-weight: var(--weight-medium);
   letter-spacing: 0.04em;
-  color: #9fd0c4;
+  color: var(--color-brand-on-dark);
   text-transform: uppercase;
 }
 
 .hero__quick-item svg {
-  color: #9fd0c4;
+  color: var(--color-brand-on-dark);
 }
 
 @media (min-width: 768px) {

@@ -72,7 +72,7 @@
 }
 
 .page-header--dark .breadcrumbs a {
-  color: #9fd0c4;
+  color: var(--color-brand-on-dark);
 }
 
 .page-header__title {
@@ -86,11 +86,11 @@
 }
 
 .page-header--dark .eyebrow {
-  color: #9fd0c4;
+  color: var(--color-brand-on-dark);
 }
 
 .page-header--dark .eyebrow::before {
-  background: #9fd0c4;
+  background: var(--color-brand-on-dark);
 }
 
 .page-header__subtitle {

@@ -41,7 +41,7 @@
 }
 
 .service-hero__inner .breadcrumbs a {
-  color: #9fd0c4;
+  color: var(--color-brand-on-dark);
 }
 
 .service-hero__title {

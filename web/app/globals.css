@@ -1,17 +1,18 @@
 /* ============================================================
    MPM Services — Global styles & design tokens
-   Premium neutral base · charcoal text · eucalyptus/teal accent
+   Premium neutral base · charcoal text · logo red accent
    ============================================================ */
 
 :root {
-  /* ---------- Colour — brand (restrained eucalyptus/teal) ---------- */
-  --color-brand: #1e7465;
-  --color-brand-strong: #15574c;
-  --color-brand-strongest: #0f433a;
-  --color-brand-soft: #e8f1ee;
-  --color-brand-softer: #f2f7f5;
+  /* ---------- Colour — brand (logo red) ---------- */
+  --color-brand: #e2231a;
+  --color-brand-strong: #c41e16;
+  --color-brand-strongest: #9e1710;
+  --color-brand-soft: #fdeae8;
+  --color-brand-softer: #fdf3f2;
   --color-brand-on: #ffffff;
-  --color-brand-border: #c4dbd4;
+  --color-brand-border: #f1c4c1;
+  --color-brand-on-dark: #ffb4ac;
 
   /* ---------- Colour — warm neutral surfaces ---------- */
   --color-bg: #faf9f6;
@@ -96,7 +97,7 @@
   --shadow-sm: 0 1px 2px rgb(24 20 12 / 0.06);
   --shadow-md: 0 6px 18px -6px rgb(24 20 12 / 0.14);
   --shadow-lg: 0 18px 40px -16px rgb(24 20 12 / 0.22);
-  --shadow-brand: 0 8px 22px -8px rgb(30 116 101 / 0.45);
+  --shadow-brand: 0 8px 22px -8px rgb(226 35 26 / 0.45);
 
   /* ---------- Transitions ---------- */
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
