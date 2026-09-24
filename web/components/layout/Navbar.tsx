@@ -55,10 +55,32 @@ export default function Navbar() {
     };
   }, [open]);
 
+  useEffect(() => {
+    if (!open) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [open]);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => {
+      if (mq.matches) {
+        setOpen(false);
+        setServicesOpen(false);
+      }
+    };
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
   const services = mainNav.find((item) => item.href === "/services");
 
   return (
-    <header className="site-header">
+    <>
+      <header className="site-header">
       <div className="container site-header__inner">
         <Link href="/" className="brand" aria-label={`${site.brand} home`}>
           <Image
@@ -124,6 +146,7 @@ export default function Navbar() {
           <MenuIcon open={open} />
         </button>
       </div>
+      </header>
 
       <div
         id="mobile-menu"
@@ -183,6 +206,6 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-    </header>
+    </>
   );
 }
