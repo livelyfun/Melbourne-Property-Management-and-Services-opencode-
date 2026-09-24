@@ -1,0 +1,121 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.about-visual {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  min-height: 320px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  order: -1;
+}
+
+.about-prose p {
+  color: var(--color-ink-soft);
+  line-height: var(--leading-relaxed);
+  margin: 0 0 var(--space-5);
+}
+
+.about-services {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.about-service-card {
+  display: block;
+  height: 100%;
+  padding: var(--space-8) var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base),
+    transform var(--transition-base);
+}
+
+.about-service-card:hover {
+  border-color: var(--color-brand-border);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.about-service-card h3 {
+  font-size: var(--text-2xl);
+  color: var(--color-ink);
+}
+
+.about-service-card p {
+  margin-top: var(--space-3);
+  color: var(--color-ink-soft);
+  line-height: var(--leading-base);
+}
+
+.about-service-card__link {
+  display: inline-block;
+  margin-top: var(--space-4);
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-sm);
+  color: var(--color-brand);
+}
+
+.about-values {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.about-value-card {
+  height: 100%;
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-brand);
+  border-radius: var(--radius-md);
+}
+
+.about-value-card h3 {
+  font-size: var(--text-xl);
+  font-family: var(--font-display);
+  margin-bottom: var(--space-2);
+}
+
+.about-value-card p {
+  color: var(--color-ink-soft);
+  line-height: var(--leading-base);
+}
+
+@media (min-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+  }
+
+  .about-visual {
+    order: 0;
+    aspect-ratio: 4 / 5;
+    min-height: 0;
+  }
+
+  .about-services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-values {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-5);
+  }
+}

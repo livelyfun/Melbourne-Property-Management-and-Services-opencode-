@@ -1,0 +1,110 @@
+.page-header {
+  padding-block: var(--space-14) var(--space-10);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-header--light {
+  background: var(--color-bg);
+}
+
+.page-header--dark {
+  background: var(--color-surface-dark);
+  border-bottom: 1px solid var(--color-surface-dark-border);
+}
+
+.page-header__inner {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.page-header--center {
+  text-align: center;
+}
+
+.page-header--center .page-header__inner {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.page-header--center .breadcrumbs ol {
+  justify-content: center;
+}
+
+.breadcrumbs {
+  margin-bottom: var(--space-6);
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+  align-items: center;
+}
+
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "/";
+  color: var(--color-border-strong);
+}
+
+.breadcrumbs a {
+  color: var(--color-brand);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.breadcrumbs a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.page-header--dark .breadcrumbs {
+  color: var(--color-ink-inverse-soft);
+}
+
+.page-header--dark .breadcrumbs a {
+  color: #9fd0c4;
+}
+
+.page-header__title {
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-extrabold);
+  letter-spacing: -0.03em;
+}
+
+.page-header--dark .page-header__title {
+  color: var(--color-ink-inverse);
+}
+
+.page-header--dark .eyebrow {
+  color: #9fd0c4;
+}
+
+.page-header--dark .eyebrow::before {
+  background: #9fd0c4;
+}
+
+.page-header__subtitle {
+  margin-top: var(--space-4);
+  font-size: var(--text-lg);
+  color: var(--color-ink-soft);
+  line-height: var(--leading-snug);
+  max-width: 60ch;
+}
+
+.page-header--center .page-header__subtitle {
+  margin-inline: auto;
+}
+
+.page-header--dark .page-header__subtitle {
+  color: var(--color-ink-inverse-soft);
+}

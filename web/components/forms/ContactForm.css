@@ -1,0 +1,96 @@
+.contact-form {
+  display: grid;
+  gap: var(--space-5);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-8) var(--space-6);
+}
+
+.contact-field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.contact-field label {
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-sm);
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font: inherit;
+  font-size: var(--text-base);
+  color: var(--color-ink);
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: none;
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px var(--color-brand-soft);
+}
+
+.contact-field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form__note {
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+  line-height: var(--leading-snug);
+  margin: 0;
+}
+
+.contact-success {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-10);
+  text-align: center;
+}
+
+.contact-success__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-brand);
+  color: var(--color-ink-inverse);
+  font-size: 1.5rem;
+  font-weight: var(--weight-bold);
+}
+
+.contact-success h3 {
+  margin-top: var(--space-5);
+  font-size: var(--text-2xl);
+}
+
+.contact-success p {
+  margin: var(--space-3) auto 0;
+  max-width: 48ch;
+  color: var(--color-ink-soft);
+  line-height: var(--leading-base);
+}
+
+.contact-success p a {
+  color: var(--color-brand);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.contact-success .btn {
+  margin-top: var(--space-6);
+}

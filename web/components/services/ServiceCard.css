@@ -1,0 +1,70 @@
+/* ============================================================
+   Service cards
+   ============================================================ */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.service-card__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.service-card__media img {
+  transition: transform 640ms var(--ease);
+}
+
+.service-card:hover .service-card__media img {
+  transform: scale(1.04);
+}
+
+.service-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  flex: 1;
+}
+
+.service-card__title {
+  font-size: var(--text-2xl);
+}
+
+.service-card__title a {
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.service-card__title a:hover {
+  color: var(--color-brand);
+}
+
+.service-card__summary {
+  color: var(--color-ink-soft);
+  line-height: var(--leading-base);
+}
+
+.service-card__link {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

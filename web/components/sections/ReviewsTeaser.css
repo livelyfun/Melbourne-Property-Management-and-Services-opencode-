@@ -1,0 +1,38 @@
+.reviews-pending {
+  max-width: 640px;
+  margin: var(--space-12) auto 0;
+  padding: var(--space-10);
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.reviews-pending__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-brand-soft);
+  color: var(--color-brand);
+}
+
+.reviews-pending h3 {
+  margin-top: var(--space-5);
+  font-size: var(--text-2xl);
+}
+
+.reviews-pending p {
+  margin-top: var(--space-3);
+  color: var(--color-ink-soft);
+}
+
+.reviews-pending__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+  margin-top: var(--space-6);
+}
